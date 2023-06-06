@@ -1,0 +1,39 @@
+### get all content
+GET http://localhost:9000/api/content
+
+### get content by id
+GET http://localhost:9000/api/content/2
+
+### craete a new content
+POST http://localhost:9000/api/content
+Content-Type: application/json
+
+{
+  "id" : 2,
+  "title" : "Title 1",
+  "desc":"Description 1 ",
+  "status": "COMPLETED",
+  "type":"VIDEO",
+  "dateCreated": "2023-06-06T14:55:05.552081074",
+  "dateUpdated": "",
+  "url" : ""
+}
+
+### update a new content
+PUT http://localhost:9000/api/content/2
+Content-Type: application/json
+
+{
+  "id" : 2,
+  "title" : "Title 2",
+  "desc":"Description 2 ",
+  "status": "COMPLETED",
+  "type":"VIDEO",
+  "dateCreated": "2023-06-06T14:55:05.552081074",
+  "dateUpdated": "2023-06-06T14:55:05.552081074",
+  "url" : "s.com"
+}
+
+
+### delete a new content
+DELETE http://localhost:9000/api/content/3
