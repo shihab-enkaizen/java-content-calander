@@ -2,31 +2,31 @@
 GET http://localhost:9000/api/content
 
 ### get content by id
-GET http://localhost:9000/api/content/2
+GET http://localhost:9000/api/content/3
 
 ### craete a new content
 POST http://localhost:9000/api/content
 Content-Type: application/json
 
 {
-  "id" : 2,
+  "id" : null,
   "title" : "Title 1",
   "desc":"Description 1 ",
   "status": "COMPLETED",
-  "type":"VIDEO",
+  "contentType":"VIDEO",
   "dateCreated": "2023-06-06T14:55:05.552081074",
   "dateUpdated": "",
   "url" : ""
 }
 
 ### update a new content
-PUT http://localhost:9000/api/content/2
+PUT http://localhost:9000/api/content/3
 Content-Type: application/json
 
 {
-  "id" : 2,
-  "title" : "Title 2",
-  "desc":"Description 2 ",
+  "id" : 3,
+  "title" : "Title 3",
+  "desc":"Description 3 ",
   "status": "COMPLETED",
   "type":"VIDEO",
   "dateCreated": "2023-06-06T14:55:05.552081074",
